@@ -42,7 +42,7 @@
     "plugins": {
       "cordova-plugin-ionic": {
         "APP_ID": "7b516205",
-        "CHANNEL_NAME": "User Testing Channel",
+        "CHANNEL_NAME": "Master",
         "UPDATE_METHOD": "background"
       }
     }
