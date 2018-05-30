@@ -1,0 +1,8 @@
+{
+  "name": "Avatar-App",
+  "app_id": "7b516205",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
