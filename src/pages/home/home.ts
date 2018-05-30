@@ -7,8 +7,15 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  ethereumAddress = null;
+  createdAvatar = null;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  createAvatar() {
+    this.createdAvatar = this.ethereumAddress;
   }
 
 }
