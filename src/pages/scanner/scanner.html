@@ -8,5 +8,13 @@
 
 
 <ion-content padding>
+  <button ion-button full icon-left (click)="scanCode()">
+    <ion-icon name="qr-scanner"></ion-icon>Scan QR
+  </button>
 
+  <ion-card *ngIf="scannedCode">
+    <ion-card-content>
+      Result from scan: {{ scannedCode }}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -10,6 +10,9 @@ import { AvatarsPage} from "../pages/avatars/avatars";
 import { PassportPage} from "../pages/passport/passport";
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { NgxQRCodeModule} from "ngx-qrcode2";
+import { BarcodeScanner} from "@ionic-native/barcode-scanner";
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -25,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    NgxQRCodeModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -40,6 +44,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
