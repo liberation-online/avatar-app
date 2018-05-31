@@ -8,20 +8,14 @@
 
   <ion-card *ngIf="createdAvatar">
     <ion-item>
-      <ion-avatar item-start>
-        <img src="https://robohash.org/{{createdAvatar}}.png?set=set3">
-      </ion-avatar>
-      <h2>{{createdAvatar}}</h2>
-      <p>Using Robohash Set 3</p>
+      <h2>{{avatarName}}</h2>
+      <small>{{createdAvatar}}</small>
     </ion-item>
     <img src="https://robohash.org/{{createdAvatar}}.png?set=set3">
-    <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
-    </ion-card-content>
   </ion-card>
 
   <ion-item>
-    <ion-input type="text" placeholder="ethereum address" [(ngModel)]="ethereumAddress"></ion-input>
+    <ion-input type="text" placeholder="avatar name" [(ngModel)]="avatarName"></ion-input>
   </ion-item>
   <button ion-button full icon-left (click)="createAvatar()">
     <ion-icon name="person-add"></ion-icon>

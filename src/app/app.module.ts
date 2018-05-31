@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { SettingsPage} from "../pages/settings/settings";
 import { ScannerPage} from "../pages/scanner/scanner";
 import { AvatarsPage} from "../pages/avatars/avatars";
+import { PassportPage} from "../pages/passport/passport";
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingsPage,
     ScannerPage,
     AvatarsPage,
+    PassportPage,
     TabsPage
   ],
   imports: [
@@ -32,6 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingsPage,
     ScannerPage,
     AvatarsPage,
+    PassportPage,
     TabsPage
   ],
   providers: [

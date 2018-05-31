@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
+
+let nodeEth = require('node-eth-address');
 
 @Component({
   selector: 'page-home',
@@ -7,15 +10,18 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  ethereumAddress = null;
   createdAvatar = null;
+  avatarName = null;
 
   constructor(public navCtrl: NavController) {
 
   }
 
   createAvatar() {
-    this.createdAvatar = this.ethereumAddress;
+    //@todo - use user defined password
+    let address = nodeEth.getDefaultAddress('password');
+    console.log(address.keyStore);
+    this.createdAvatar = address.address;
   }
 
 }
