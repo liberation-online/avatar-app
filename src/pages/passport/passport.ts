@@ -70,10 +70,6 @@ export class PassportPage {
     ]
   }
 
-  openNavDetailsPage(item) {
-    this.navCtrl.push(PassportDetailsPage, { item: item });
-  }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad PassportPage');
   }
