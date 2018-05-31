@@ -11,21 +11,4 @@
 
 <ion-content padding>
 
-  <ion-card *ngIf="createdAvatar">
-    <ion-item>
-      <h2>{{avatarName}}</h2>
-      <small>{{createdAvatar}}</small>
-    </ion-item>
-    <img src="https://robohash.org/{{createdAvatar}}.png?set=set3">
-  </ion-card>
-
-  <ion-item>
-    <ion-input type="text" placeholder="avatar name" [(ngModel)]="avatarName"></ion-input>
-  </ion-item>
-  <button ion-button full icon-left (click)="createAvatar()">
-    <ion-icon name="person-add"></ion-icon>
-    Create Avatar
-  </button>
-
-
 </ion-content>

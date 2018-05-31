@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import nodeEth from 'node-eth-address';
 
 import { ScannerPage } from "../scanner/scanner";
 
@@ -10,18 +9,8 @@ import { ScannerPage } from "../scanner/scanner";
 })
 export class HomePage {
 
-  createdAvatar = null;
-  avatarName = null;
-
   constructor(public navCtrl: NavController) {
 
-  }
-
-  createAvatar() {
-    //@todo - use user defined password
-    let address = nodeEth.getDefaultAddress('password');
-    console.log(address.keyStore);
-    this.createdAvatar = address.address;
   }
 
   openScanner() {
