@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Require } from 'require';
-
-let nodeEth = require('node-eth-address');
+import nodeEth from 'node-eth-address';
 
 @Component({
   selector: 'page-home',
